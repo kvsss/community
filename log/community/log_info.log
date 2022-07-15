@@ -1,0 +1,5 @@
+2022-07-15 17:13:15,082 INFO [main] c.d.c.l.LogTest [StartupInfoLogger.java:55] Starting LogTest using Java 1.8.0_291 on DESKTOP-JTJ35B8 with PID 3496 (started by shinelon in D:\idea\IntelliJ IDEA 2021.1.3\code\98-project\my-project\community)
+2022-07-15 17:13:15,083 INFO [main] c.d.c.l.LogTest [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-07-15 17:13:16,792 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-07-15 17:13:17,152 INFO [main] c.d.c.l.LogTest [StartupInfoLogger.java:61] Started LogTest in 2.546 seconds (JVM running for 3.52)
+2022-07-15 17:13:17,360 INFO [main] c.d.c.l.LogTest [LogTest.java:21] tips
