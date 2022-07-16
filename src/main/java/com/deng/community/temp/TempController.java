@@ -5,6 +5,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 /**
  * @author :deng
  * @version :1.0
@@ -72,4 +76,47 @@ public class TempController {
         return "";
     }
 
+
+    // cookie
+    @RequestMapping(path = "/cookie", method = RequestMethod.GET)
+    @ResponseBody
+    public String c1(HttpServletResponse response) {
+
+        Cookie code = new Cookie("code", "123");
+        // 过期时间,如果不设置过期时间，那么当关闭浏览器时就会失效
+        code.setMaxAge(10 * 60);
+        // 只在该路径下有效
+        code.setPath("/community/cookie");
+        response.addCookie(code);
+        return "";
+    }
+
+    //获得cookie
+    @RequestMapping(path = "/cookie/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getCookie(@CookieValue("code") String code) {
+        System.out.println(code);
+        return "";
+    }
+
+
+    // https://github.dev/cosen1024/community
+    //session
+    //获得cookie
+    @RequestMapping(path = "/session/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setCookie(HttpSession session) {
+        session.setAttribute("id", "123");
+        session.setAttribute("name", "xixi");
+        return "123";
+    }
+
+
+    @RequestMapping(path = "/session/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getCookie(HttpSession session) {
+        System.out.println(session.getAttribute("id"));
+        System.out.println(session.getAttribute("name"));
+        return "123";
+    }
 }
