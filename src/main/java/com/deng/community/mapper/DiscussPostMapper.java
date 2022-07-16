@@ -1,4 +1,4 @@
-package com.deng.community.dao;
+package com.deng.community.mapper;
 
 import com.deng.community.pojo.DiscussPost;
 import org.apache.ibatis.annotations.Mapper;
@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 @Mapper
-public interface DiscussPostDao {
+public interface DiscussPostMapper {
 
     List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit);
 

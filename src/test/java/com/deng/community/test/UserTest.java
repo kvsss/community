@@ -1,7 +1,7 @@
 package com.deng.community.test;
 
-import com.deng.community.dao.DiscussPostDao;
-import com.deng.community.dao.UserDao;
+import com.deng.community.mapper.DiscussPostMapper;
+import com.deng.community.mapper.UserMapper;
 import com.deng.community.pojo.DiscussPost;
 import com.deng.community.pojo.User;
 import com.deng.community.service.UserService;
@@ -20,10 +20,10 @@ import java.util.List;
 public class UserTest {
 
     @Autowired
-    UserDao userMapper;
+    UserMapper userMapper;
 
     @Autowired
-    DiscussPostDao discussPostDao;
+    DiscussPostMapper discussPostDao;
 
     @Autowired
     UserService userService;

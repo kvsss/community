@@ -1,11 +1,11 @@
-package com.deng.community.dao;
+package com.deng.community.mapper;
 
 import com.deng.community.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 @Mapper
-public interface UserDao {
+public interface UserMapper {
     User selectById(@Param("id") int id);
     User selectByUsername(@Param("username") String username);
     User selectByEmail(@Param("email") String email);

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.deng.community.dao.UserDao">
+<mapper namespace="com.deng.community.mapper.UserMapper">
     <sql id="selectFields">
         id
         , username, password, salt, email, type, status, activation_code as activationCode, header_url as headerUrl,

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.deng.community.dao.DiscussPostDao">
+<mapper namespace="com.deng.community.mapper.DiscussPostMapper">
 
     <sql id="selectFields">
         id, user_id as userId, title, content, type, status, create_time as createTime, comment_count as commentCount, score
