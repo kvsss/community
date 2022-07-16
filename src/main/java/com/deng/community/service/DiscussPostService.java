@@ -2,7 +2,7 @@ package com.deng.community.service;
 
 
 import com.deng.community.mapper.DiscussPostMapper;
-import com.deng.community.pojo.DiscussPost;
+import com.deng.community.entity.DiscussPost;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,14 +12,14 @@ import java.util.List;
 public class DiscussPostService {
 
     @Autowired
-    private DiscussPostMapper discussPostDao;
+    private DiscussPostMapper discussPostMapper;
 
     public List<DiscussPost> findDiscussPosts(int userId, int offset, int limit) {
-        return discussPostDao.selectDiscussPosts(userId, offset, limit);
+        return discussPostMapper.selectDiscussPosts(userId, offset, limit);
     }
 
     public int findDiscussPostRows(int userId) {
-        return discussPostDao.selectDiscussPostRows(userId);
+        return discussPostMapper.selectDiscussPostRows(userId);
     }
 
 }

@@ -2,8 +2,8 @@ package com.deng.community.test;
 
 import com.deng.community.mapper.DiscussPostMapper;
 import com.deng.community.mapper.UserMapper;
-import com.deng.community.pojo.DiscussPost;
-import com.deng.community.pojo.User;
+import com.deng.community.entity.DiscussPost;
+import com.deng.community.entity.User;
 import com.deng.community.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

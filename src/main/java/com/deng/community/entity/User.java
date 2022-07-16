@@ -1,4 +1,4 @@
-package com.deng.community.pojo;
+package com.deng.community.entity;
 
 import java.util.Date;
 
@@ -6,11 +6,11 @@ public class User {
     private int id;
     private String username;
     private String password;
-    private String salt; // ?
+    private String salt; // 加密
     private String email;  // 邮箱
     private int type; // '0-普通用户; 1-超级管理员; 2-版主;'
     private int status; // '0-未激活; 1-已激活;'
-    private String activationCode; // ?
+    private String activationCode; // 激活码,使用邮箱激活使用
     private String headerUrl;  // 头像url
     private Date createTime; // 创建时间
 

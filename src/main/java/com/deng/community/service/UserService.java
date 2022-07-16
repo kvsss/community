@@ -1,8 +1,10 @@
 package com.deng.community.service;
 
 
+import com.deng.community.entity.LoginTicket;
+import com.deng.community.mapper.LoginTicketMapper;
 import com.deng.community.mapper.UserMapper;
-import com.deng.community.pojo.User;
+import com.deng.community.entity.User;
 import com.deng.community.util.CommunityConstant;
 import com.deng.community.util.CommunityUtil;
 import com.deng.community.util.MailClient;
@@ -13,10 +15,9 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+
+import java.util.*;
+
 
 @Service
 public class UserService implements CommunityConstant {
@@ -26,6 +27,9 @@ public class UserService implements CommunityConstant {
 
     @Autowired
     private MailClient mailClient;
+
+    @Autowired
+    private LoginTicketMapper loginTicketMapper;
 
     @Autowired
     private TemplateEngine templateEngine;
@@ -40,6 +44,7 @@ public class UserService implements CommunityConstant {
         return userMapper.selectById(id);
     }
 
+    // 注册
     public Map<String, Object> register(User user) {
         Map<String, Object> map = new HashMap<>();
 
@@ -112,4 +117,60 @@ public class UserService implements CommunityConstant {
         }
     }
 
+    // 登录
+    public Map<String, Object> login(String username, String password, int expiredSeconds) {
+        Map<String, Object> map = new HashMap<>();
+
+        // 空值处理
+        if (StringUtils.isBlank(username)) {
+            map.put("usernameMsg", "账号不能为空!");
+            return map;
+        }
+        if (StringUtils.isBlank(password)) {
+            map.put("passwordMsg", "密码不能为空!");
+            return map;
+        }
+
+        // 验证账号
+        User user = userMapper.selectByUsername(username);
+        if (user == null) {
+            map.put("usernameMsg", "该账号不存在!");
+            return map;
+        }
+
+        // 验证状态
+        if (user.getStatus() == 0) {
+            map.put("usernameMsg", "该账号未激活!");
+            return map;
+        }
+
+        // 验证密码
+        password = CommunityUtil.md5(password + user.getSalt());
+        if (!user.getPassword().equals(password)) {
+            map.put("passwordMsg", "密码不正确!");
+            return map;
+        }
+
+        // 生成登录凭证
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setUserId(user.getId());
+        loginTicket.setTicket(CommunityUtil.generateUUID());
+        loginTicket.setStatus(0);
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + expiredSeconds * 1000));
+        loginTicketMapper.insertLoginTicket(loginTicket);
+
+        map.put("ticket", loginTicket.getTicket());
+        return map;
+    }
+
+
+    // 注销
+    public void logout(String ticket) {
+        loginTicketMapper.updateStatus(ticket, 1);
+    }
+
+    // 获得ticket
+    public LoginTicket findLoginTicket(String ticket) {
+        return loginTicketMapper.selectByTicket(ticket);
+    }
 }

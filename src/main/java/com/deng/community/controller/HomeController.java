@@ -1,9 +1,9 @@
 package com.deng.community.controller;
 
 
-import com.deng.community.pojo.DiscussPost;
-import com.deng.community.pojo.Page;
-import com.deng.community.pojo.User;
+import com.deng.community.entity.DiscussPost;
+import com.deng.community.entity.Page;
+import com.deng.community.entity.User;
 import com.deng.community.service.DiscussPostService;
 import com.deng.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

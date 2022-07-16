@@ -1,6 +1,6 @@
 package com.deng.community.mapper;
 
-import com.deng.community.pojo.User;
+import com.deng.community.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

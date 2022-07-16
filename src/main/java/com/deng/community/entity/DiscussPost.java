@@ -1,4 +1,4 @@
-package com.deng.community.pojo;
+package com.deng.community.entity;
 
 import java.util.Date;
 

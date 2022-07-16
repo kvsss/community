@@ -1,4 +1,4 @@
-package com.deng.community.pojo;
+package com.deng.community.entity;
 
 /**
  * 封装分页相关的信息.
