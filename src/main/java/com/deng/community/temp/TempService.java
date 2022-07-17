@@ -31,4 +31,9 @@ public class TempService {
     public void destroy() {
         System.out.println("销毁前");
     }
+
+
+    public void fun1() throws Exception {
+    }
+
 }

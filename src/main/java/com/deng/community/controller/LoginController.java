@@ -36,8 +36,6 @@ public class LoginController implements CommunityConstant {
     @Autowired
     private Producer kaptchaProducer;
 
-
-
     @Value("${server.servlet.context-path}")
     private String contextPath;
 
@@ -66,9 +64,9 @@ public class LoginController implements CommunityConstant {
         }
     }
 
-    // http://localhost:8080/community/activation/101/code
     @RequestMapping(path = "/activation/{userId}/{code}", method = RequestMethod.GET)
     public String activation(Model model, @PathVariable("userId") int userId, @PathVariable("code") String code) {
+        // 路径：http://localhost:8080/community/activation/101/code
         int result = userService.activation(userId, code);
         if (result == ACTIVATION_SUCCESS) {
             model.addAttribute("msg", "激活成功,您的账号已经可以正常使用了!");
@@ -121,7 +119,7 @@ public class LoginController implements CommunityConstant {
         int expiredSeconds = rememberme ? REMEMBER_EXPIRED_SECONDS : DEFAULT_EXPIRED_SECONDS;
         Map<String, Object> map = userService.login(username, password, expiredSeconds);
         if (map.containsKey("ticket")) {
-            // 登录后,也将ticket保存到ticket,后续登录会携带
+            // 登录后,也将ticket保存到ticket,保存到浏览器中,后续登录会携带
             Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
             cookie.setPath(contextPath);
             cookie.setMaxAge(expiredSeconds);
