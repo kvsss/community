@@ -170,8 +170,6 @@ public class UserService implements CommunityConstant {
     }
 
 
-
-
     // 获得ticket
     public LoginTicket findLoginTicket(String ticket) {
         return loginTicketMapper.selectByTicket(ticket);
@@ -181,5 +179,10 @@ public class UserService implements CommunityConstant {
     // 更新用户图像url
     public int updateHeaderUrl(int userId, String headerUrl) {
         return userMapper.updateHeaderUrl(userId, headerUrl);
+    }
+
+
+    public User findUserByName(String username) {
+        return userMapper.selectByUsername(username);
     }
 }
