@@ -1,5 +1,6 @@
 package com.deng.community.test;
 
+import com.deng.community.entity.LoginTicket;
 import com.deng.community.mapper.DiscussPostMapper;
 import com.deng.community.mapper.UserMapper;
 import com.deng.community.entity.DiscussPost;
@@ -47,6 +48,13 @@ public class UserTest {
     @Test
     public void t3() {
         System.out.println(userService.findUserById(0));
+    }
+
+
+    @Test
+    public void t4() {
+        LoginTicket ticket = userService.findLoginTicket("b411b42410bf4abe8d9166fc8a8f993a");
+        System.out.println(ticket);
     }
 
 

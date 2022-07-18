@@ -12,7 +12,7 @@ public class LoginTicket {
     private int id;
     private int userId;
     private String ticket;  //一个随机字符串
-    private int status;// 状态  '0-有效; 1-无效;',
+    private int status;// 状态  '0-有效,登录状态; 1-无效;退出状态',    status状态为1或者expired已经过期,则需要重新登录
     private Date expired;//过期时间
 
     public int getId() {
