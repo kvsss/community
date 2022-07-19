@@ -12,6 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * 统一异常处理
+ * 处理抛出的异常(没有被try catch异常捕获)
+ */
+
 @ControllerAdvice(annotations = Controller.class)
 public class ExceptionAdvice {
 

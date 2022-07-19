@@ -1,5 +1,8 @@
 package com.deng.community.temp;
 
+import com.deng.community.advice.ExceptionAdvice;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +21,10 @@ import javax.servlet.http.HttpSession;
 @Controller
 @RequestMapping("/temp")
 public class TempController {
+
+
+    private static final Logger logger = LoggerFactory.getLogger(TempController.class);
+
 
     // 参数拼接
     // student?current=10&limit=1
@@ -122,7 +129,13 @@ public class TempController {
 
     // 错误
     @RequestMapping(path = "/error", method = RequestMethod.GET)
-    public void error() {
-        int i = 1 / 0;
+    public String  error() {
+
+        try {
+            int i = 1 / 0;
+        } catch (Exception e) {
+            logger.error("除0异常");
+        }
+        return "redirect:/error";
     }
 }
