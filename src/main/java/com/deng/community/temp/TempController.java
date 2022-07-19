@@ -119,4 +119,10 @@ public class TempController {
         System.out.println(session.getAttribute("name"));
         return "123";
     }
+
+    // 错误
+    @RequestMapping(path = "/error", method = RequestMethod.GET)
+    public void error() {
+        int i = 1 / 0;
+    }
 }
