@@ -2,6 +2,9 @@ package com.deng.community.entity;
 
 import java.util.Date;
 
+/**
+ * 私信
+ */
 public class Message {
 
     private int id;

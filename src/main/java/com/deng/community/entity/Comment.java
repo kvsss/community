@@ -2,15 +2,19 @@ package com.deng.community.entity;
 
 import java.util.Date;
 
+/**
+ * 评论
+ */
+
 public class Comment {
 
     private int id;
-    private int userId;
-    private int entityType;
-    private int entityId;
-    private int targetId;
-    private String content;
-    private int status;
+    private int userId;   // pinlun
+    private int entityType; // 是对帖子评论,或者对评论评论   1表示对帖子，2表示对评论
+    private int entityId; // 如果entityType是1，表示的是帖子id,如果entityType是2 表示common的id
+    private int targetId;  // 如果entityType是1，则不起作用,如果entityType是2, targetId=0表示直接回复自己, 否者表示回复的是回复人的id
+    private String content; // 评论类容
+    private int status; // 状态
     private Date createTime;
 
     public int getId() {
