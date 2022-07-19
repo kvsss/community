@@ -2,6 +2,7 @@ package com.deng.community.controller;
 
 import com.deng.community.annotation.LoginRequired;
 import com.deng.community.entity.User;
+import com.deng.community.service.LikeService;
 import com.deng.community.service.UserService;
 import com.deng.community.util.CommunityUtil;
 import com.deng.community.util.HostHolder;
@@ -51,6 +52,9 @@ public class UserController {
     @Autowired
     private HostHolder hostHolder;
 
+
+    @Autowired
+    private LikeService likeService;
     // 跳转到设置页码
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -115,6 +119,24 @@ public class UserController {
         } catch (IOException e) {
             logger.error("读取头像失败: " + e.getMessage());
         }
+    }
+
+
+    // 个人主页
+    @RequestMapping(path = "/profile/{userId}", method = RequestMethod.GET)
+    public String getProfilePage(@PathVariable("userId") int userId, Model model) {
+        User user = userService.findUserById(userId);
+        if (user == null) {
+            throw new RuntimeException("该用户不存在!");
+        }
+
+        // 用户
+        model.addAttribute("user", user);
+        // 点赞数量
+        int likeCount = likeService.findUserLikeCount(userId);
+        model.addAttribute("likeCount", likeCount);
+
+        return "/site/profile";
     }
 
 
