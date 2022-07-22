@@ -1,9 +1,7 @@
 package com.deng.community.controller;
 
-import com.deng.community.entity.Comment;
-import com.deng.community.entity.DiscussPost;
-import com.deng.community.entity.Page;
-import com.deng.community.entity.User;
+import com.deng.community.entity.*;
+import com.deng.community.event.EventProducer;
 import com.deng.community.service.CommentService;
 import com.deng.community.service.DiscussPostService;
 import com.deng.community.service.LikeService;
@@ -40,6 +38,9 @@ public class DiscussPostController implements CommunityConstant {
     @Autowired
     private LikeService likeService;
 
+    @Autowired
+    private EventProducer eventProducer;
+
     @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
     public String addDiscussPost(String title, String content) {
@@ -54,6 +55,15 @@ public class DiscussPostController implements CommunityConstant {
         post.setContent(content);
         post.setCreateTime(new Date());
         discussPostService.addDiscussPost(post);
+
+        // 触发发帖事件
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(user.getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(post.getId());
+        eventProducer.fireEvent(event);
+        System.out.println("触发");
 
         // 报错的情况,将来统一处理.
         return CommunityUtil.getJSONString(0, "发布成功!");
