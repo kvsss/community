@@ -58,3 +58,31 @@
 2022-07-22 00:21:04,416 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1063] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
 2022-07-22 00:24:00,051 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1103] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 2 : {publish=LEADER_NOT_AVAILABLE}
 2022-07-22 00:24:00,124 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1103] [Consumer clientId=consumer-community-consumer-group-2, groupId=community-consumer-group] Error while fetching metadata with correlation id 9 : {publish=LEADER_NOT_AVAILABLE}
+2022-07-22 18:12:53,624 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: b12f163b-4b76-4d2d-a573-115b4fa359c0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-22 18:12:53,710 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-22 18:20:46,597 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 3fadb353-cb23-4496-8e54-6bec2f35fbc0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-22 18:20:46,650 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-22 18:27:39,287 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: dc4706b7-1399-4a17-888e-41274c39236a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-22 18:27:39,332 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-22 18:30:16,494 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: c97a20d3-7a4e-48af-a503-cc03902a928f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-22 18:30:16,539 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
