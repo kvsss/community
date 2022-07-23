@@ -1,5 +1,6 @@
 package com.deng.community.config;
 
+import com.deng.community.intercepter.DataInterceptor;
 import com.deng.community.intercepter.LoginRequiredInterceptor;
 import com.deng.community.intercepter.LoginTicketInterceptor;
 import com.deng.community.intercepter.MessageInterceptor;
@@ -23,6 +24,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Autowired
     private LoginTicketInterceptor loginTicketInterceptor;
 
+    @Autowired
+    private DataInterceptor dataInterceptor;
 
     // 使用security
 /*    @Autowired
@@ -42,6 +45,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
         registry.addInterceptor(messageInterceptor)
                 .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
+
+        registry.addInterceptor(dataInterceptor)
+                .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
+
     }
 
 }

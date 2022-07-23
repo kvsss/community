@@ -139,3 +139,139 @@ Using generated security password: f9bd414e-675a-44e9-9d40-9ab2aa77eef1
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
 2022-07-23 15:55:50,588 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:18:34,259 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 2caeee22-efb6-446b-a8a7-1fd150bc3d20
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:18:34,331 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:18:57,386 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 396f44cb-080b-4afd-ba50-86298047f533
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:18:57,437 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:19:30,439 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: c7897455-d965-4be0-b3fe-70c5272a38e8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:19:30,483 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:26:33,086 WARN [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [A303D694483A81AD2240CA9FA18E1F66]
+2022-07-23 16:26:35,651 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: ad7f0310-4c89-4181-8b5f-cb4921063658
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:26:35,910 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:31:13,881 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m34s529ms896µs800ns).
+2022-07-23 16:31:37,590 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 33aff39e-aa4c-4146-a77a-9ec6ebb3d371
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:31:37,671 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:32:27,825 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 2ce4325a-3e4a-4b39-b1c3-47f7862d386f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:32:27,906 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:34:33,788 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 7389ca38-eab7-4a14-a7c5-e1e0b20f6d3f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:34:33,836 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:35:19,295 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 74ccdf2e-963b-480b-93a1-fcc02feec493
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:35:19,348 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 16:37:34,295 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 1431eb3c-8ce5-4ab7-aecd-fea6b3b818c4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 16:37:34,372 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 17:58:53,338 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 99280153-7681-40c5-b0ad-e3c1ad75d05c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 17:58:53,403 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 17:59:49,442 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: f7b88cd1-a3b1-42b2-9e01-e6d47d6d4085
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 17:59:49,491 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 18:00:27,460 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.data.redis.RedisSystemException: Unknown redis exception; nested exception is java.lang.IllegalArgumentException: Sourcekeys must not be empty]
+2022-07-23 22:23:45,553 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 23987b93-bcec-49f1-ab9a-526b6fbd92fa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:23:45,667 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 22:24:38,453 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 3cca1e2f-32b3-4b5b-9424-561e597a871a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:24:38,529 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 22:25:08,066 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 966117ea-e88c-4265-8df4-4299eabb75ae
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:25:08,143 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 22:26:20,751 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 0f1c42b3-d036-4bc5-9c3e-3b42193e7c07
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:26:20,830 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 22:27:09,449 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: edc5d872-3060-4a58-a0a7-35650bd88fa1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:27:09,527 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 22:27:32,766 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: f60e7931-12d6-43a6-ba0d-80ff4799386a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:27:32,867 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 22:29:11,484 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: ec34b4d8-359d-4765-9bdf-602d01c979dc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:29:11,647 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-23 22:29:12,322 WARN [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: d942aebd-5153-44bb-aa5b-539d42b4c0e8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-23 22:29:12,493 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.

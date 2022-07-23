@@ -5,7 +5,9 @@ import com.deng.community.mapper.DiscussPostMapper;
 import com.deng.community.mapper.UserMapper;
 import com.deng.community.entity.DiscussPost;
 import com.deng.community.entity.User;
+import com.deng.community.service.LikeService;
 import com.deng.community.service.UserService;
+import com.deng.community.util.CommunityConstant;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +20,7 @@ import java.util.List;
  * @since :1.8
  */
 @SpringBootTest
-public class UserTest {
+public class UserTest implements CommunityConstant {
 
     @Autowired
     UserMapper userMapper;
@@ -28,6 +30,10 @@ public class UserTest {
 
     @Autowired
     UserService userService;
+
+
+    @Autowired
+    LikeService likeService;
 
     @Test
     public void t1() {
@@ -57,5 +63,11 @@ public class UserTest {
         System.out.println(ticket);
     }
 
+
+    @Test
+    public void t5() {
+        long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, 288);
+        System.out.println(likeCount);
+    }
 
 }
