@@ -1,6 +1,5 @@
 package com.deng.community.config;
 
-
 import com.deng.community.util.CommunityConstant;
 import com.deng.community.util.CommunityUtil;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +7,9 @@ import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.access.AccessDeniedHandler;
 
@@ -46,6 +47,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                         AUTHORITY_ADMIN,
                         AUTHORITY_MODERATOR
                 )
+                .antMatchers(
+                        "/discuss/top",
+                        "/discuss/wonderful"
+                )
+                .hasAnyAuthority(
+                        AUTHORITY_MODERATOR
+                )
+                .antMatchers(
+                        "/discuss/delete"
+                )
+                .hasAnyAuthority(
+                        AUTHORITY_ADMIN
+                )
                 .anyRequest().permitAll()
                 .and().csrf().disable();
 
@@ -55,12 +69,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                     // 没有登录
                     @Override
                     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
+                        //Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
                         String xRequestedWith = request.getHeader("x-requested-with");
                         if ("XMLHttpRequest".equals(xRequestedWith)) {
                             response.setContentType("application/plain;charset=utf-8");
                             PrintWriter writer = response.getWriter();
                             writer.write(CommunityUtil.getJSONString(403, "你还没有登录哦!"));
                         } else {
+                            //System.out.println("没有权限");
                             response.sendRedirect(request.getContextPath() + "/login");
                         }
                     }

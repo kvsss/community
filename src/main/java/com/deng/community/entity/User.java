@@ -8,7 +8,7 @@ public class User {
     private String password;
     private String salt; // 加密
     private String email;  // 邮箱
-    private int type; // '0-普通用户; 1-超级管理员; 2-版主;'
+    private int type; // '0-普通用户; 1-超级管理员; 2-版主;'   普通用户无法加精，置顶， 超级管理员只能删除，版主可以加精,不能置顶
     private int status; // '0-未激活; 1-已激活;'
     private String activationCode; // 激活码,使用邮箱激活使用
     private String headerUrl;  // 头像url

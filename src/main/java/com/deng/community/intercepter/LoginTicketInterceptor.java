@@ -79,7 +79,10 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
                     Authentication authentication = new UsernamePasswordAuthenticationToken(
                             user, user.getPassword(), userService.getAuthorities(user.getId()));
                     SecurityContextHolder.setContext(new SecurityContextImpl(authentication));
+                    //System.out.println(SecurityContextHolder.getContext().getAuthentication());
 
+/*                    System.out.println(userService.getAuthorities(user.getId()));
+                    System.out.println("认证");*/
                 } else { //过期
 
                     // 重定向到首页
@@ -103,7 +106,7 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         hostHolder.clear();
-        SecurityContextHolder.clearContext();
+        //SecurityContextHolder.clearContext();
     }
 }
 
