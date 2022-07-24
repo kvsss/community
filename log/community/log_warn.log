@@ -160,3 +160,11 @@ Using generated security password: f8d50893-06df-4f69-a70b-e3935a8a0352
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
 2022-07-24 14:16:55,655 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-24 15:20:35,745 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: c9436a30-b8a4-4e50-983f-5d0f599d6a5c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-24 15:20:35,804 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-24 15:20:36,483 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1103] [Consumer clientId=consumer-community-consumer-group-4, groupId=community-consumer-group] Error while fetching metadata with correlation id 2 : {share=LEADER_NOT_AVAILABLE}
