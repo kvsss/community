@@ -135,7 +135,7 @@ public class TempService {
 
 
     // 让该方法在多线程环境下,被异步的调用.
-    @Async
+/*    @Async
     public void execute1() {
         logger.info("execute1");
     }
@@ -143,7 +143,7 @@ public class TempService {
     @Scheduled(initialDelay = 10000, fixedRate = 1000)
     public void execute2() {
         logger.info("execute2");
-    }
+    }*/
 
 
 

@@ -131,3 +131,32 @@ Using generated security password: 87acbe22-cb25-4962-b54d-50a7f0980ced
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
 2022-07-24 00:31:23,018 WARN [main] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-24 13:52:45,309 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: d45714d7-67d7-4ea3-be17-62b4eb6962c7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-24 13:52:45,407 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-24 14:14:31,376 WARN [restartedMain] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [ThymeleafAutoConfiguration.java:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-24 14:14:33,609 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 265b0857-8f5d-4a27-9208-bffb744e0668
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-24 14:14:33,657 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-24 14:15:18,083 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: df7d23c7-baa3-4416-85bf-35d8dceb6706
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-24 14:15:18,135 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-24 14:16:55,606 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: f8d50893-06df-4f69-a70b-e3935a8a0352
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-24 14:16:55,655 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.

@@ -121,7 +121,7 @@ public class ThreadPoolTests {
     @Test
     public void testThreadPoolTaskExecutorSimple() {
         for (int i = 0; i < 10; i++) {
-            tempService.execute1();
+            //tempService.execute1();
         }
 
         sleep(10000);

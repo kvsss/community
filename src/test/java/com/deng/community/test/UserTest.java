@@ -43,7 +43,7 @@ public class UserTest implements CommunityConstant {
 
     @Test
     public void t2() {
-        List<DiscussPost> discussPosts = discussPostDao.selectDiscussPosts(0, 0, 10);
+        List<DiscussPost> discussPosts = discussPostDao.selectDiscussPosts(0, 0, 10,0);
         for (DiscussPost discussPost : discussPosts) {
             System.out.println(discussPost);
         }
