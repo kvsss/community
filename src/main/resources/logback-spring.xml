@@ -89,7 +89,7 @@
         </filter>
     </appender>
 
-    <logger name="com.nowcoder.community" level="debug"/>
+    <logger name="com.deng.community" level="debug"/>
 
     <root level="info">
         <appender-ref ref="FILE_ERROR"/>
