@@ -200,3 +200,21 @@ Using generated security password: 697c05b1-3f5b-4a64-9584-fb4620d93e8d
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
 2022-07-25 13:52:53,296 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-25 14:21:22,965 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: 51b993ae-e43e-41f6-b0dc-f59025e5f035
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-25 14:21:23,013 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-25 14:21:34,300 WARN [RMI TCP Connection(1)-192.168.174.1] o.s.b.a.h.HealthEndpointSupport [HealthEndpointSupport.java:181] Health contributor org.springframework.boot.actuate.mail.MailHealthIndicator (mail) took 10342ms to respond
+2022-07-25 14:25:49,512 WARN [http-nio-8080-exec-6] o.s.b.a.h.HealthEndpointSupport [HealthEndpointSupport.java:181] Health contributor org.springframework.boot.actuate.mail.MailHealthIndicator (mail) took 13343ms to respond
+2022-07-25 14:26:17,616 WARN [http-nio-8080-exec-9] o.s.b.a.h.HealthEndpointSupport [HealthEndpointSupport.java:181] Health contributor org.springframework.boot.actuate.mail.MailHealthIndicator (mail) took 10654ms to respond
+2022-07-25 14:27:57,077 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:88] 
+
+Using generated security password: dc461742-b5cb-4ab7-a326-6ba142ab529a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-25 14:27:57,120 WARN [restartedMain] o.s.s.c.a.w.b.WebSecurity [WebSecurity.java:307] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-07-25 14:28:08,981 WARN [RMI TCP Connection(3)-192.168.174.1] o.s.b.a.h.HealthEndpointSupport [HealthEndpointSupport.java:181] Health contributor org.springframework.boot.actuate.mail.MailHealthIndicator (mail) took 10501ms to respond
